@@ -117,9 +117,9 @@ printQuote();
 
 //this will change the color everytime screen refresh needs to happen when button clicked
 function randomPageColor() {
-  var x = Math.floor(Math.random() * 256);
-  var y = Math.floor(Math.random() * 256);
-  var z = Math.floor(Math.random() * 256);
+  var x = Math.floor(Math.random() * 250);
+  var y = Math.floor(Math.random() * 250);
+  var z = Math.floor(Math.random() * 250);
   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
 
 
