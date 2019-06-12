@@ -20,6 +20,7 @@ let quotes = [
   {
     quote: ` Knowing others is intelligence; knowing yourself is true wisdom.
               Mastering others is strength, mastering yourself is true power.`,
+
     source: 'Lao Tzu',
     citation: 'Tao Te Ching',
     year: 'Published August 28, 1989,',
@@ -34,6 +35,7 @@ let quotes = [
     quote: 'Those who know do not speak. Those who speak do not know.',
     source: 'Lao Tsu',
     citation: 'Tao Te Ching',
+
     year: 'Published August 28, 1989,',
     tag: 'Philosophy', //Extra credit
 
@@ -41,7 +43,9 @@ let quotes = [
   //*2nd quote
 
   {
+
     quote: 'Simplicity, patience, compassion. These three are your greatest treasures. ',
+
     source: 'Lao Tzu',
     citation: 'Tao Te Ching',
     year: 'Published August 28, 1989,',
@@ -69,7 +73,8 @@ let quotes = [
 
 //Generating a random item number from a list to return a random quote
 
-function getRandomQuote (quotes) {
+function getRandomQuote(quotes) {
+
 
   let randNum = Math.floor(Math.random() * quotes.length);
   let randObject = quotes[randNum];
@@ -78,10 +83,10 @@ function getRandomQuote (quotes) {
 }
 
 
-
 //This function prints the objects from the above referenced array in random order, an extra credit tag and conditional statement is created 
 function printQuote() {
   let quoteHtml = getRandomQuote(quotes);
+
   let stringBlack = ' ';
   stringBlack = '<p class="quote">' + quoteHtml.quote + "</p>";
   stringBlack += '<p class="source">' + quoteHtml.source + "";
@@ -103,7 +108,7 @@ function printQuote() {
 
 
   document.getElementById("quote-box").innerHTML = stringBlack;
-  
+
   randomPageColor();
 }
 
@@ -118,7 +123,7 @@ function randomPageColor() {
 
 
   document.body.style.background = bgColor;
-  }
+}
 
 
 //function to set the interval for my page color change. Extra Credit!!
@@ -127,8 +132,3 @@ setInterval('printQuote()', 20000);
 //This button will change the quote everytime it is "clicked"
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-
-//color arrays
-
-
-
