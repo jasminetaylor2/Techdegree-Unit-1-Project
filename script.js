@@ -53,8 +53,6 @@ let quotes = [
   {
     quote: 'When you are content to be simply yourself and don\'t compare or compete, everyone will respect you.',
     source: 'Lao Tzu',
-    citation: 'Tao Te Ching',
-    year: 'Published August 28, 1989,',
     tag: 'Philosophy', //Extra credit
 
   },
@@ -63,8 +61,6 @@ let quotes = [
   {
     quote: 'A man with outward courage dares to die\; a man with inner courage dares to live.',
     source: 'Lao Tzu',
-    citation: 'Tao Te Ching',
-    year: 'Published August 28, 1989,',
     tag: 'Philosophy', //Extra credit
   }
 ];
