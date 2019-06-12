@@ -35,7 +35,6 @@ let quotes = [
     quote: 'Those who know do not speak. Those who speak do not know.',
     source: 'Lao Tsu',
     citation: 'Tao Te Ching',
-
     year: 'Published August 28, 1989,',
     tag: 'Philosophy', //Extra credit
 
@@ -45,7 +44,6 @@ let quotes = [
   {
 
     quote: 'Simplicity, patience, compassion. These three are your greatest treasures. ',
-
     source: 'Lao Tzu',
     citation: 'Tao Te Ching',
     year: 'Published August 28, 1989,',
@@ -55,17 +53,20 @@ let quotes = [
   //* 3rd quote
 
   {
-    quote: 'When you are content to be simply yourself and don\'t compare or compete, everyone will respect you.',
-    source: 'Lao Tzu',
-    tag: 'Philosophy', //Extra credit
+    quote: ` Some days are just bad days, that's all.
+            You have to experience sadness to know happiness, and I remind myself that not 
+            every day is going to be a good day, that's just the way it is! `,
+    source: 'Dita Von Teese',
+    tag: ' Inspiration', //Extra credit
 
   },
   //* 4th quote
 
   {
-    quote: 'A man with outward courage dares to die\; a man with inner courage dares to live.',
-    source: 'Lao Tzu',
-    tag: 'Philosophy', //Extra credit
+    quote: `Success isn't always about 'Greatness', it's about consistency. Consistent, 
+            hard work gains success. Greatness will come.`,
+    source: 'Dwayne Johnson',
+    tag: ' Inspiration', //Extra credit
   }
 ];
 //*5th quote
