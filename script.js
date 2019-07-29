@@ -53,21 +53,91 @@ let quotes = [
   //* 3rd quote
 
   {
-    quote: ` Some days are just bad days, that's all.
-            You have to experience sadness to know happiness, and I remind myself that not 
-            every day is going to be a good day, that's just the way it is! `,
-    source: 'Dita Von Teese',
-    tag: ' Inspiration', //Extra credit
+    quote: `When you are content to be simply yourself and don't compare or compete, everyone will respect you`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy', //Extra credit
 
   },
   //* 4th quote
 
   {
-    quote: `Success isn't always about 'Greatness', it's about consistency. Consistent, 
-            hard work gains success. Greatness will come.`,
-    source: 'Dwayne Johnson',
-    tag: ' Inspiration', //Extra credit
+    quote: `The truth is not always beautiful, nor beautiful words the truth. `,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy', //Extra credit
+  },
+  {
+    quote: `A man with outward courage dares to die; a man with inner courage dares to live.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy',
+  },
+  {
+    quote: `Do you have the patience to wait until your mud settles and the water is clear?`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy',
+  },
+  {
+    quote: `If you understand others you are smart.
+If you understand yourself you are illuminated.
+If you overcome others you are powerful.
+If you overcome yourself you have strength.
+If you know how to be satisfied you are rich.
+If you can act with vigor, you have a will.
+If you don't lose your objectives you can be long-lasting.
+If you die without loss, you are eternal.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy',
+  },
+  {
+    quote: `The flame that burns Twice as bright burns half as long.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy'
+  },
+  {
+    quote: `If you try to change it, you will ruin it. Try to hold it, and you will lose it.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy'
+  },
+  {
+    quote: `A leader is best
+When people barely know he exists
+Of a good leader, who talks little,
+When his work is done, his aim fulfilled,
+They will say, “We did this ourselves.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy'
+  },
+  {
+    quote: `The wise man is one who, knows, what he does not know.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy'
+  },
+  {
+    quote: `Give evil nothing to oppose
+and it will disappear by itself.`,
+    source: 'Lao Tzu',
+    citation: 'Tao Te Ching',
+    year: 'Published August 28, 1989,',
+    tag: 'Philosophy'
   }
+
 ];
 //*5th quote
 
@@ -109,22 +179,35 @@ function printQuote() {
 
 
   document.getElementById("quote-box").innerHTML = stringBlack;
-
-  randomPageColor();
+  getImage();
+  //randomPageColor();
 }
 
 printQuote();
 
+//image will change everytime screen refresh
+function getImage() {
+  let randomInt = Math.floor(Math.random() * 100);
+  //document.body.style.background = ["url('pics\1 - BG.jpg" + randomInt + "')", "url('pics\2 - BG.jpg" + randomInt + "')", "url('pics\3 - BG.jpg" + randomInt + "')", "url('pics\4 - BG.jpg" + randomInt + "')", "url('pics\5 - BG.jpg" + randomInt + "')" ]
+
+ document.body.style.background = "url('https://source.unsplash.com/random?sig=" + randomInt + "')";
+  document.body.style.backsize = "cover"
+  // document.body.style.backgroundRepeat = "no-repeat"
+};
+//
+// document.body.style.backgroundImage = "url(pics/1-BG.jpg) repeat-y center"
+// $('body').css({"background-image": "url(pics/2-BG.jpg)"})
+// let images = []
 //this will change the color everytime screen refresh needs to happen when button clicked
-function randomPageColor() {
-  var x = Math.floor(Math.random() * 250);
-  var y = Math.floor(Math.random() * 250);
-  var z = Math.floor(Math.random() * 250);
-  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+// function randomPageColor() {
+//   var x = Math.floor(Math.random() * 250);
+//   var y = Math.floor(Math.random() * 250);
+//   var z = Math.floor(Math.random() * 250);
+//   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
 
 
-  document.body.style.background = bgColor;
-}
+//   document.body.style.background = bgColor;
+// }
 
 
 //function to set the interval for my page color change. Extra Credit!!
